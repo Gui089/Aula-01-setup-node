@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  api-aula:
+    image: bitnami/postgresql
+    ports:
+      - "5446:5432"
+    environment:
+      - POSTGRESQL_USER=guilherme
+      - POSTGRESQL_PASSWORD=guilherme321
+      - POSTGRESQL_DB=apiaula
